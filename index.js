@@ -5,8 +5,8 @@ const Nexmo = require('nexmo');
 const socketio = require('socket.io'); 
 
 const nexmo = new Nexmo({
-    apiKey: '7c300ba3',
-    apiSecret: 'd0d28993f9493d08'
+    apiKey: 'your api key',
+    apiSecret: 'your api secret'
 }, {debug: true});
 
 const app = express();
@@ -40,7 +40,7 @@ app.post('/', (req, res) => {
             }
             io.emit('smsStatus', data);
             //emit to the client
-        }
+        }P
     }
 );
 });
